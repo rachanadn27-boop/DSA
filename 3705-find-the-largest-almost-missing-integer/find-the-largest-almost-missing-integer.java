@@ -28,11 +28,9 @@ class Solution {
         if (map.get(nums[0]) == 1 && map.get(nums[n]) == 1) {
             return Math.max(nums[0], nums[n]);
         }
-
         if (map.get(nums[0]) == 1 && map.get(nums[n]) > 1) {
             return nums[0];
         }
-
         if (map.get(nums[n]) == 1 && map.get(nums[0]) > 1) {
             return nums[n];
         }
