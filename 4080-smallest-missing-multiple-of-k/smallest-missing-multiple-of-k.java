@@ -4,12 +4,10 @@ class Solution {
         for (int num : nums) {
             seen.add(num);
         }
-
         int cur = k;
         while (seen.contains(cur)) {
             cur += k;
         }
-
         return cur;
     }
 }
