@@ -11,11 +11,8 @@ class Solution {
             for (int j = i; j < n; j++) {
 
                 cur.append(s.charAt(j));
-
                 if (s.charAt(j) == '1')
                     oneCnt++;
-
-                // More than k ones can never become valid again
                 if (oneCnt > k)
                     break;
 
@@ -31,7 +28,6 @@ class Solution {
                 }
             }
         }
-
         return ans;
     }
 }
