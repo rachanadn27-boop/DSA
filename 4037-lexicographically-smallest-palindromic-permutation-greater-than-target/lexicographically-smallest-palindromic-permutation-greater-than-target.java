@@ -56,10 +56,8 @@ class Solution {
                 return answer.toString();
             }
         }
-
         return "";
     }
-
     boolean check(int[] freq) {
         for (int v : freq)
             if (v < 0)
