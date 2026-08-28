@@ -32,20 +32,17 @@ class Solution {
             freq[w - 'a'] += 2;
             if (!check(freq))
                 continue;
-
             for (int j = (w - 'a') + 1; j < 26; j++) {
                 if (freq[j] == 0)
                     continue;
                 freq[j] -= 2;
                 StringBuilder answer = new StringBuilder(target.substring(0, i + 1));
                 answer.setCharAt(i, (char) ('a' + j));
-
                 for (int k = 0; k < 26; k++) {
                     int cnt = freq[k] / 2;
                     for (int m = 0; m < cnt; m++)
                         answer.append((char) ('a' + k));
                 }
-
                 String part = new StringBuilder(answer).reverse().toString();
                 if (center != 0)
                     answer.append(center);
