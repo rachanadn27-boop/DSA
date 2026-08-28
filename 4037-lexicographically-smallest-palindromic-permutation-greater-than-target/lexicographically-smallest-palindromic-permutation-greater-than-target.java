@@ -12,7 +12,6 @@ class Solution {
                 freq[i]--;
             }
         }
-
         int sz = s.length();
         int half = sz / 2;
         for (int i = 0; i < half; i++)
@@ -28,7 +27,6 @@ class Solution {
             if (tail.compareTo(target.substring(half)) > 0)
                 return head + tail;
         }
-
         for (int i = half - 1; i >= 0; i--) {
             char w = target.charAt(i);
             freq[w - 'a'] += 2;
