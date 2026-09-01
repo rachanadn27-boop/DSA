@@ -78,11 +78,9 @@ class Solution {
                 if (classroom[nr].charAt(nc) == 'R') {
                     ne = energy;
                 }
-
                 if (classroom[nr].charAt(nc) == 'L') {
                     nmask |= (1 << id[nr][nc]);
                 }
-
                 if (nmask == totalMask) {
                     return cur.moves + 1;
                 }
