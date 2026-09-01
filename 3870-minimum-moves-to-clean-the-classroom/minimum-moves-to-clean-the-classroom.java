@@ -57,7 +57,6 @@ class Solution {
 
         while (!queue.isEmpty()) {
             State cur = queue.poll();
-
             for (int d = 0; d < 4; d++) {
                 int nr = cur.r + dr[d];
                 int nc = cur.c + dc[d];
