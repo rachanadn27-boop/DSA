@@ -61,13 +61,10 @@ class Solution {
             for (int d = 0; d < 4; d++) {
                 int nr = cur.r + dr[d];
                 int nc = cur.c + dc[d];
-
                 if (nr < 0 || nr >= m || nc < 0 || nc >= n)
                     continue;
-
                 if (classroom[nr].charAt(nc) == 'X')
                     continue;
-
                 int ne = cur.e - 1;
 
                 if (ne < 0)
