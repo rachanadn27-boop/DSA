@@ -89,9 +89,7 @@ class Solution {
 
                 if (ne <= best[nr][nc][nmask])
                     continue;
-
                 best[nr][nc][nmask] = ne;
-
                 queue.offer(new State(nr, nc, nmask, ne, cur.moves + 1));
             }
         }
