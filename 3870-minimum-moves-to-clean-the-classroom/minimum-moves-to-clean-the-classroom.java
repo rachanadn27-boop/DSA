@@ -37,7 +37,6 @@ class Solution {
 
         class State {
             int r, c, mask, e, moves;
-
             State(int r, int c, int mask, int e, int moves) {
                 this.r = r;
                 this.c = c;
