@@ -22,19 +22,14 @@ class Solution {
                 }
             }
         }
-
         if (k == 0) return 0;
-
         int totalMask = (1 << k) - 1;
-
         int[][][] best = new int[m][n][1 << k];
-
         for (int r = 0; r < m; r++) {
             for (int c = 0; c < n; c++) {
                 java.util.Arrays.fill(best[r][c], -1);
             }
         }
-
         class State {
             int r, c, mask, e, moves;
             State(int r, int c, int mask, int e, int moves) {
