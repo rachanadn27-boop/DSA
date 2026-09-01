@@ -46,9 +46,7 @@ class Solution {
                 this.moves = moves;
             }
         }
-
         java.util.ArrayDeque<State> queue = new java.util.ArrayDeque<>();
-
         best[sr][sc][0] = energy;
         queue.offer(new State(sr, sc, 0, energy, 0));
 
