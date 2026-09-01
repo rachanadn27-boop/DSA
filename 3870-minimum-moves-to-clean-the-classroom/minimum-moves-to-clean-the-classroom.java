@@ -4,14 +4,11 @@ class Solution {
         int n = classroom[0].length();
 
         int[][] id = new int[m][n];
-
         for (int r = 0; r < m; r++) {
             java.util.Arrays.fill(id[r], -1);
         }
-
         int k = 0;
         int sr = 0, sc = 0;
-
         for (int r = 0; r < m; r++) {
             for (int c = 0; c < n; c++) {
                 if (classroom[r].charAt(c) == 'S') {
