@@ -93,7 +93,6 @@ class Solution {
                 queue.offer(new State(nr, nc, nmask, ne, cur.moves + 1));
             }
         }
-
         return -1;
     }
 }
