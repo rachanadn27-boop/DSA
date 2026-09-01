@@ -2,7 +2,6 @@ class Solution {
     public int minMoves(String[] classroom, int energy) {
         int m = classroom.length;
         int n = classroom[0].length();
-
         int[][] id = new int[m][n];
         for (int r = 0; r < m; r++) {
             java.util.Arrays.fill(id[r], -1);
