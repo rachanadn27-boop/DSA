@@ -86,7 +86,6 @@ class Solution {
                 if (nmask == totalMask) {
                     return cur.moves + 1;
                 }
-
                 if (ne <= best[nr][nc][nmask])
                     continue;
                 best[nr][nc][nmask] = ne;
