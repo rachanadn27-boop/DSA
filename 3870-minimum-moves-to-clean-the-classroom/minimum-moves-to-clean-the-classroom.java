@@ -54,7 +54,6 @@ class Solution {
 
         int[] dr = {-1, 1, 0, 0};
         int[] dc = {0, 0, -1, 1};
-
         while (!queue.isEmpty()) {
             State cur = queue.poll();
             for (int d = 0; d < 4; d++) {
