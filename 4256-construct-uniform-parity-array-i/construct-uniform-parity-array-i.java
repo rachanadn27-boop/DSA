@@ -5,7 +5,6 @@ class Solution {
         int even = 0;
 
         int n = nums1.length;
-
         for (int x : nums1) {
             if (x % 2 == 0) {
                 even++;
