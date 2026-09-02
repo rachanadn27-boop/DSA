@@ -1,6 +1,6 @@
 class Solution {
     public boolean uniformArray(int[] nums1) {
-        
+
         int odd = 0;
         int even = 0;
         int n = nums1.length;
