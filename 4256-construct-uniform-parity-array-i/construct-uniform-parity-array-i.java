@@ -10,13 +10,11 @@ class Solution {
                 odd++;
             }
         }
-
         if (even == n || odd == n) {
             return true;
         } else if (even >= 1 && odd >= 1) {
             return true;
         }
-
         return false;
     }
 }
