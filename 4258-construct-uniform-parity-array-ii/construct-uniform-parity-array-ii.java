@@ -14,7 +14,6 @@ class Solution {
         if (minOdd == Integer.MAX_VALUE) {
             return true;
         }
-
         return minOdd < minEven;
     }
 }
