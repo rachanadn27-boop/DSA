@@ -10,7 +10,6 @@ class Solution {
                 minOdd = Math.min(minOdd, x);
             }
         }
-
         if (minOdd == Integer.MAX_VALUE) {
             return true;
         }
