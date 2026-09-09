@@ -1,7 +1,6 @@
 class Solution {
     public long countCommas(long n) {
         if (n <= 999) return 0;
-
         long totalCommas = 0;
         long rangeStart = 1000;
         long rangeEnd = rangeStart * 1000 - 1;
