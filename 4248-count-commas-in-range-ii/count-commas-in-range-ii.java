@@ -9,7 +9,6 @@ class Solution {
             long numbers = Math.min(n, rangeEnd) - rangeStart + 1;
             totalCommas += (long) commas * numbers;
             if (rangeEnd > n) break;
-
             rangeStart = rangeStart * 1000;
             rangeEnd = rangeStart * 1000 - 1;
             commas++;
