@@ -8,14 +8,12 @@ class Solution {
                 if (t == h) continue;
                 for (int u = 0; u < n; u++) {
                     if (u == h || u == t) continue;
-
                     if (digits[u] % 2 != 0) continue;
                     int num = digits[h] * 100 + digits[t] * 10 + digits[u];
                     seen.add(num);
                 }
             }
         }
-
         return seen.size();
     }
 }
