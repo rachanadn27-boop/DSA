@@ -20,7 +20,6 @@ class Solution {
             return dp[i][prevProd];
         long skip = 0, take = 0;
 
-        // Skip current element (only if no subarray started yet)
         if (prevProd == k) {
             skip = solve(i + 1, k, req, k, nums, dp);
         }
