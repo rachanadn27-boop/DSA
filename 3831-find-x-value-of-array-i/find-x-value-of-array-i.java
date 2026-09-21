@@ -1,10 +1,8 @@
 class Solution {
     int n;
-
     public long[] resultArray(int[] nums, int k) {
         n = nums.length;
         long[] res = new long[k];
-
         for (int i = 0; i < n; i++)
             nums[i] %= k;
 
