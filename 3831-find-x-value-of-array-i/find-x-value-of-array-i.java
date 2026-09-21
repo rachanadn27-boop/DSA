@@ -30,7 +30,6 @@ class Solution {
 
         take += (curProd == req) ? 1 : 0;
         take += solve(i + 1, (int) curProd, req, k, nums, dp);
-
         return dp[i][prevProd] = take + skip;
     }
 }
