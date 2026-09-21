@@ -19,12 +19,9 @@ class Solution {
         if (dp[i][prevProd] != -1)
             return dp[i][prevProd];
         long skip = 0, take = 0;
-
         if (prevProd == k) {
             skip = solve(i + 1, k, req, k, nums, dp);
         }
-
-        // Take current element
         long curProd;
         if (prevProd == k)
             curProd = nums[i];
