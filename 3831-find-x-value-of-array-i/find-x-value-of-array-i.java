@@ -14,13 +14,10 @@ class Solution {
     }
     long solve(int i, int prevProd, int req, int k,
                int[] nums, long[][] dp) {
-
         if (i >= nums.length)
             return 0;
-
         if (dp[i][prevProd] != -1)
             return dp[i][prevProd];
-
         long skip = 0, take = 0;
 
         // Skip current element (only if no subarray started yet)
