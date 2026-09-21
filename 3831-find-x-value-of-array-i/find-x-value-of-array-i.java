@@ -5,16 +5,13 @@ class Solution {
         long[] res = new long[k];
         for (int i = 0; i < n; i++)
             nums[i] %= k;
-
         for (int r = 0; r < k; r++) {
             long[][] dp = new long[n][k + 1];
             for (long[] row : dp) Arrays.fill(row, -1);
             res[r] = solve(0, k, r, k, nums, dp);
         }
-
         return res;
     }
-
     long solve(int i, int prevProd, int req, int k,
                int[] nums, long[][] dp) {
 
