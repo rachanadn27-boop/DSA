@@ -1,9 +1,7 @@
 class Solution {
     public List<String> braceExpansionII(String expression) {
         HashSet<String> set = new HashSet();
-        
         expand(expression, set);
-        
         List<String> ans = new ArrayList(set);
         Collections.sort(ans);
         return ans;
