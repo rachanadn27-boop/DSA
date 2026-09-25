@@ -16,11 +16,9 @@ class Solution {
         while (exp.charAt(start) != '{') {
             start--;
         }
-        
         String[] arr = exp.substring(start + 1, end).split(",");
         String pre = exp.substring(0, start);
         String post = exp.substring(end + 1);
-        
         for (String curr: arr) {
             expand(pre + curr + post, set);
         }
