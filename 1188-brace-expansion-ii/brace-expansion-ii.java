@@ -6,14 +6,12 @@ class Solution {
         Collections.sort(ans);
         return ans;
     }
-    
     private void expand(String exp, HashSet<String> set) {
         int end = exp.indexOf('}');
         if (end == -1) { 
             set.add(exp);
             return;
         }
-        
         int start = end;
         while (exp.charAt(start) != '{') {
             start--;
