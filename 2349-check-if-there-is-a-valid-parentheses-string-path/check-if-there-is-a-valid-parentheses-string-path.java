@@ -20,7 +20,6 @@ class Solution {
         if (r == m - 1 && c == n - 1) {
             return bal == 0;
         }
-
         if (visited[r][c][bal]) return false;
         visited[r][c][bal] = true;
 
