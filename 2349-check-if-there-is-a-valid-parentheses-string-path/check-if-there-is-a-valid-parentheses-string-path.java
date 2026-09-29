@@ -12,7 +12,6 @@ class Solution {
 
         return dfs(grid, 0, 0, 0, m, n, maxBal);
     }
-
     private boolean dfs(char[][] grid, int r, int c, int bal, int m, int n, int maxBal) {
         bal += (grid[r][c] == '(' ? 1 : -1);
         if (bal < 0 || bal > maxBal) return false;
