@@ -3,7 +3,6 @@ class Solution {
         Stack<Integer> st = new Stack<>();
         int res = 0;
         st.push(-1);
-
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == '(') {
                 st.push(i);
