@@ -9,7 +9,6 @@ class Solution {
             String s,int scanStart,int deleteStart,char open,char close,
 List<String> answers) {
         int balance = 0;
-
         for (int i = scanStart; i < s.length(); i++) {
             char c = s.charAt(i);
 
