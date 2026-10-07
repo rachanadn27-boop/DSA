@@ -6,8 +6,7 @@ class Solution {
     }
 
     private void remove(
-            String s,
-            int scanStart,
+            String s,int scanStart,
             int deleteStart,
             char open,
             char close,
