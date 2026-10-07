@@ -6,8 +6,7 @@ class Solution {
     }
 
     private void remove(
-            String s,int scanStart,int deleteStart,
-            char open,
+            String s,int scanStart,int deleteStart,char open,
             char close,
             List<String> answers) {
         int balance = 0;
