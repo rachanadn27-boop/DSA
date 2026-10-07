@@ -7,7 +7,7 @@ class Solution {
 
     private void remove(
             String s,int scanStart,int deleteStart,char open,char close,
-            List<String> answers) {
+List<String> answers) {
         int balance = 0;
 
         for (int i = scanStart; i < s.length(); i++) {
