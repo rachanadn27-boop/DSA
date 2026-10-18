@@ -6,7 +6,7 @@ class Solution {
             for(int j=i;j<nums.length;j++){
                 sum+=nums[j];
                 if(sum==k){
-                    count+=1;
+                    count++;
                 }
             }
         }
